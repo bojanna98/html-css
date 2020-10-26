@@ -6,6 +6,7 @@
     </title>
   </head>
   <body>
+    <h2>Please fill in your information</h2>
     <form>
       <label for="name"><b>Your Full Name</b></label><br>
       <input type="text" id="name" name="input_name">
@@ -141,5 +142,46 @@
       <option value="Greece"></option>
       <option value="Russia"></option>
     </datalist>
+  </br>
+  </br>
+     <label for="phone"><b>Day Phone</b></label><br>
+     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="(xxx) xxx xxxx">
+  </br>
+  </br>
+     <label for="phone"><b>Evening Phone</b></label><br>
+     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="(xxx) xxx xxxx">
+  </br>
+  </br>
+     <label for="address"><b>Address</b></label><br>
+     <input type="text" id="address" name="address" placeholder="(xxx) xxx xxxx">   
+  </br>
+  </br>
+     <label for="state"><b>State</b></label><br>
+     <input  list="state-list" type="state" id="state" name="">
+     <datalist id="state-list">
+      <option value="Kumanovo"></option>
+      <option value="Skopje"></option>
+      <option value="Veles"></option>
+      <option value="Strumica"></option>
+      <option value="Bitola"></option>
+     </datalist>
+  </br>
+  </br>
+  <label for="code"><b>Zip Code</b></label><br>
+  <input type="code" id="code" name="code">
+  </br>
+  </br>
+  <fieldset>
+     <input type="radio"id="back-up"name="same_name"/>
+     <label for="back-up">Subject to backup withholding</label> 
+
+     <input type="radio" id="reinvest" name="same_name"/>  
+     <label for="reinvest">I want to reinvest my dividents</label>
+  </fieldset>
+  </br>
+  <fieldset>
+     <input type="radio"id="address_2"name="address_2"/>
+     <label for="address_2">+ Add optional maling address</label> 
+  </fieldset>
   </body>
 </html>
