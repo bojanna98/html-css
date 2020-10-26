@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Software Order Form</h1>
+    </head>
+    <body>
+        <fieldset>
+            <legend>License Details</legend>
+            <ul>
+                <li><label for="email">Email address</label>
+                <input type="email" id="email" name="email"></li>
+
+                <li><label for="website">Website</label>
+                <input type="url" id="website" name="website" placeholder="http://www.example.com/"></li>
+
+                <li><label for="num">Number of licenses</label>
+                <input type="number" id="num" name="num" maxlength="10" placeholder="How many to buy (1-10)"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Billing Details</legend>
+            <ul>
+                <li><label for="name">Name</label>
+                <input type="name" id="name" name="name" placeholder="First Last"></li>
+
+                <li><label for="address">Address</label>
+                <input type="address" id="address" name="address"></li>
+
+                <li><label for="code">Postal Code</label>
+                <input type="number" id="code" name="code" placeholder="Post Code or zip code"></li>
+
+                <li><label for="list">Country</label>
+                    <input list="country" type="text" id="list"/></li>
+            
+                    <datalist id="country">
+                        <option value="Macedonia"></option>
+                        <option value="United States"></option>
+                        <option value="Serbia"></option>
+                        <option value="Bulgaria"></option>
+                        <option value="Slovakia"></option>
+                        <option value="Italia"></option>
+                        <option value="Spain"></option>
+                        <option value="Germany"></option>
+                        <option value="Greece"></option>
+                        <option value="Russia"></option>
+                    </datalist>
+                <li><label for="tel">Phone (optional)</label>
+                <input type="tel" id="tel" name="tel" placeholder="Include country prefix, e.g"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Payment details</legend>
+            <ul>
+                <li><label for="card_number">Card number</label>
+                <input type="number" id="card_number" name="card_number" placeholder="As shown on the front of your card"></li>
+
+                <li><label for="cvv_code">CVV code</label>
+                <input type="number" id="cvv_code" name="cvv_code" placeholder="3-digit number on back of the card"></li>
+
+                <li><label for="date">Expiry date</label>
+                <input type="number" id="date" name="date" placeholder="YYYY-MM"></li>
+            </ul>
+        </fieldset>
+        <button>Input Your Order</button>
+    </body>
+</html>
