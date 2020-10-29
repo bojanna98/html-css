@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+/*Ima prednost, po ID, unikatno*/
+#text {
+    margin: 15px;
+    margin-top: 15px;
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* za eden specificen element, i ne e dozvolivo da imame povekje elementi so isto ID, dodeka so klasa (class) mozhe*/
+.text {
+    color:red;
+    font-size: 24px;
+}
+
+
+/*  */
+ul li {
+    color: yellow;
+}
+
+li a {
+    text-decoration: none;
+}
+
+ul, p /*ili zapirka mesto +*/  {
+    color: red;
+}
+
+li:first-of-type + li {
+    color:red;
+}
+/*ovoj stil go dobiva site ul-elementi na isto nivo so p-elementot*/
+p ~ ul {
+    color: blue;
+}
+/*ova pristapuva do child*/
+ul > li {
+    color:green;
+}
+
+/*~ oznacuva na isto nivo*/
+#listContainer ~ span {
+    color:purple;
+}
+
+.text ~ span {
+    color:yellow;
+}
+/*pristapuvanje do atributot na elementot h2, selektiranje sprema REL koristime:*/
+h2[rel="friend"] {
+    color:blue;
+}
+h1[rel="externel"] {
+    color:yellow;
+}
+a[href="http://www.google.com"] {
+    text-decoration: none;
+    color: red;
+}
+/*site elementi shto go sodrzat zborot externel, iako moze da e napisano jbfshexternel**svbgskd*/
+h1[rel*="externel"] {
+    color:red;
+}
+
+div[id*="post"] {
+    color: red;
+}
+/* ova ke selektira se sto zapocnuva so externel */
+h1[rel^="externel"] {
+    color:red;
+}
+
+div[id^="post"] {
+    color:yellow;
+}
+
+/*ova selektira se sto zavrsuva na externel*/
+h1[rel$="externel"] {
+    color:red;
+}
+
+/* selektira*/
+h1[rel~="externel"] {
+    color:red;
+}
+
+h1[rel|="friend"] {
+    color:purple;
+}
+
+div[class|="button"] {
+    color:red;
+}
+
+h1[rel="friend"][title^="Important"] {
+    color: red;
+}
