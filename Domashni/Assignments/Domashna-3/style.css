@@ -53,3 +53,6 @@ td[rel="numbCircle"]{
     background-color: lightgray;
     color:white;
 }
+th{
+    font-weight: normal;
+}

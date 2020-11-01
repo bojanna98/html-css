@@ -100,3 +100,6 @@ div[class|="button"] {
 h1[rel="friend"][title^="Important"] {
     color: red;
 }
+td[rel="name"]{
+    text-align: left;
+}
