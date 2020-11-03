@@ -13,7 +13,7 @@
     </br>
     </br>
       <label for="list">Date of Birth</label><br>
-      <input list="day" type="text" id="list" placeholder="Day"/>
+      <input list="day" type="text" pattern="\d*" id="list" placeholder="Day"/>
     <datalist id="day">
       <option value="1"></option>
       <option value="2"></option>
@@ -62,7 +62,7 @@
       <option value="November"></option>
       <option value="December"></option>
     </datalist>
-    <input type="year" list="year" id="list" placeholder="Year"/>
+    <input type="year" list="year" pattern="\d*" id="list" placeholder="Year"/>
     <datalist id="year">
       <option value="1990"></option>
       <option value="1991"></option>
@@ -99,14 +99,16 @@
   </form>
 </br>
 </br>
+
+
   <fieldset>
     <input type="radio"id="tax"name="same-name"/>
     <label for="tax">Tax ID</label> 
 
-    <input type="radio" id="social_number" name="same=name"/>  
+    <input type="radio" id="social_number" name="same-name"/>  
     <label for="social_number">Social Security Number</label>
 
-    <input type="text" id="number" name="number" placeholder="9 digit Number" maxlength="9">
+    <input type="text" id="number" name="number" placeholder="9 digit Number" maxlength="9" pattern="\d*">
 </fieldset>
 </br>
 </br>
