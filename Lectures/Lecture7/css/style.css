@@ -117,6 +117,7 @@ img {
 }
 
 
+/* Zakosena linija */
 .showcase::before,
 .showcase::after {
     content: '';
