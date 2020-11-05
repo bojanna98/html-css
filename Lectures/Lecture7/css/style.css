@@ -108,7 +108,30 @@ img {
     border-bottom:  1px solid #b4becb;
     width: 100%;
     padding: 3px;
-    background-color: red;
+    font-size: 1rem;
+}
+
+/* koga stiskame na name/company/email da nema boreder okolu kako pravoagolnik */
+.showcase-form input:focus {
+    outline: none;
+}
+
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -o-transform: skewY(-3deg);
+    
 }
 
 /* Utilities*/
@@ -132,6 +155,32 @@ img {
     -o-border-radius: 10px;
 }
 
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+}
+
+
+.btn:hover {
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
 .flex {
     display: flex;
     justify-content: center;
