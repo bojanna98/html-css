@@ -53,9 +53,10 @@ h1, .subhead {
 }
 
 .blue-container {
+    width:100%;
     background: #00C2FF;
     color:#fff;
-    margin: 15% 0 0;
+    margin-top: 15%;
     padding: 4em 0 2em;
     border-top-left-radius: 40px;
     transform: skewY(-2deg);
@@ -104,13 +105,13 @@ h1, .subhead {
     width: 8%;
 }
 
-.gray-container {
+.grey-container {
     background: #F6F6F6;
     padding: 4em 0 2em;
     margin-top: -3%;
 }
 
-.gray-container ul li:first-child {
+.grey-container ul li:first-child {
     margin-bottom: 2em;
 }
 
@@ -146,7 +147,7 @@ h2 {
     width: 100%;
     background: #3D444A;
     color:#fff;
-    padding: 3 em 0;
+    padding: 3em 0;
     border-top-right-radius: 40px;
     transform: skewY(2deg);
 }
@@ -156,25 +157,25 @@ h2 {
 }
 
 .footer-container:before {
-    content:"";
+    content: "";
     width: 40px;
     height: 40px;
     background-color: #3D444A;
-    position:absolute;
-    top:-39px;
-    left:0;
-    z-index:-2;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
 }
 
 .footer-container:after {
-    content:"";
+    content: "";
     width: 80px;
     height: 80px;
     background-color: #fff;
-    position:absolute;
+    position: absolute;
     z-index: -1;
-    top:-80px;
-    left:0;
+    top: -80px;
+    left: 0;
     border-radius: 50%;
 }
 
@@ -246,11 +247,11 @@ nav ul li a:hover {
     }
 
     .blue-container img {
-        width: 11%;
+        width: 20%;
     }
 
     .blue-container ul li:nth-child(3) img {
-        width:6%;
+        width: 11%;
         margin-top: -6px;
     }
     .blue-container ul{
@@ -267,7 +268,7 @@ nav ul li a:hover {
         padding:0.8em;
     }
 
-    .gray-container ul {
+    .grey-container ul {
         display: flex;
     }
 
@@ -276,17 +277,17 @@ nav ul li a:hover {
     }
 }
 
-@media only screen and (min-width:876px) {
+@media only screen and (min-width:875px) {
 
     .subhead {
         margin-bottom: 15%;
     }   
     
-    .blue-container ul li p {
+    .blue-container ul {
         margin: 0 0 4% 0;
     }
 
-    .gray-container ul {
+    .grey-container ul {
         margin:4% 0 0;
     }
 
@@ -354,7 +355,7 @@ nav ul li a:hover {
 
     .server {
         width: 40%;
-        margin:5em auto 4em 15%;
+        margin: 5em auto 4em 15%;
     }
 
     .container {
@@ -369,7 +370,7 @@ nav ul li a:hover {
         font-size:1.3em;
     }
 
-    .gray-container{
+    .grey-container{
         padding:   6em 0 4em;
     }
 
