@@ -166,7 +166,7 @@ img {
     grid-template-rows: repeat(2,1fr);
 }
 
-.cli .grid > *:first-child {
+ccc{
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 }
@@ -191,4 +191,59 @@ img {
 .languages .card h4 {
     font-size: 1.25rem;
     margin-bottom: 10px;
+}
+
+.languages .card:hover{
+    transform: translate(10px, -10px) ;
+    -webkit-transform: translate(-10px, -10px);
+    -moz-transform: translate(-1px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    -o-transform: translate(-10px, -10px);
+}
+
+
+/* Tablets */
+@media (max-width:768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid, 
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr;
+    }
+    .showcase {
+        height: auto;
+    }
+    .showcase-text {
+        text-align: center;
+        margin-top: 45px;
+    }
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+    .cli .grid > *:first-child {
+        grid-column: 1 ;
+        grid-row: 1 ;
+    }
+    
+}
+/* Mobile */
+@media (max-width:500px) {
+    .navbar {
+        height: 115px;
+    }
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, .2);
+    }
+    .navbar .flex {
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .showcase-form {
+        width: 300px;
+    }
+
 }
