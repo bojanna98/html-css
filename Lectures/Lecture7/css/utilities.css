@@ -163,15 +163,19 @@
     color: #fff;
 }
 
+
 .bg-primary a,
-.btn-dark a {
+.btn-dark a,
+.bg-dark a {
     color: #fff;
 }
 
+.bg-dark,
 .btn-dark {
     background-color: var(--dark-color);
     color: #fff;
 }
+
 
 
 

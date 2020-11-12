@@ -93,6 +93,11 @@ img {
     gap:30px;
 }
 
+.showcase-text{
+    animation: slideInFormLeft 2s ease-in;
+    -webkit-animation: slideInFormLeft 2s ease-in;
+}
+
 .showcase-form  {
     position: relative;
     top: 60px;
@@ -100,6 +105,8 @@ img {
     width: 400px;
     z-index: 1;
     justify-self: flex-end;
+    animation: slideInFormRight 3s ease-in-out;
+    -webkit-animation: slideInFormRight 3s ease-in-out;
 }
 
 .showcase-form .form-control {
@@ -143,6 +150,8 @@ img {
 
 .stats {
     padding-top: 100px;
+    animation: slideInFormBottom 4s ease-in;
+    -webkit-animation: slideInFormBottom 4s ease-in;
 }
 
 .stats-heading {
@@ -166,7 +175,7 @@ img {
     grid-template-rows: repeat(2,1fr);
 }
 
-ccc{
+.cli .grid > *:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 }
@@ -201,8 +210,13 @@ ccc{
     -o-transform: translate(-10px, -10px);
 }
 
+/* Footer */
+.footer .social a {
+    margin: 0 15px;
+}
 
-/* Tablets */
+
+/* Tablets and under */
 @media (max-width:768px) {
     .grid,
     .showcase .grid,
@@ -215,17 +229,29 @@ ccc{
     .showcase {
         height: auto;
     }
+
+    .stats {
+        animation: slideInFormLeft 2s ease-out;
+        -webkit-animation: slideInFormLeft 2s ease-out;
+    }
     .showcase-text {
         text-align: center;
         margin-top: 45px;
+        animation: slideInFormTop 1s ease-in;
+        -webkit-animation: slideInFormTop 1s ease-in;
     }
     .showcase-form {
         justify-self: center;
         margin: auto;
+        animation: slideInFormBottom 2s ease-in-out;
+        -webkit-animation: slideInFormBottom 2s ease-in-out;
     }
     .cli .grid > *:first-child {
         grid-column: 1 ;
         grid-row: 1 ;
+    }
+    .footer {
+        text-align: center;
     }
     
 }
@@ -245,5 +271,71 @@ ccc{
     .showcase-form {
         width: 300px;
     }
-
 }
+
+/* Animations */
+@keyframes slideInFormTop {
+    0% {
+        transform: translateY(-35%);
+        -webkit-transform: translateY(-35%);
+        -moz-transform: translateY(-35%);
+        -ms-transform: translateY(-35%);
+        -o-transform: translateY(-35%);        
+    }
+    100% {
+        transform: translateX(0);
+        -webkit-transform:  translateX(0);
+        -moz-transform:  translateX(0);
+        -ms-transform:  translateX(0);
+        -o-transform:  translateX(0);
+    }
+}
+@keyframes slideInFormBottom {
+    0% {
+        transform: translateY(45%);
+        -webkit-transform: translateY(45%);
+        -moz-transform: translateY(45%);
+        -ms-transform: translateY(45%);
+        -o-transform: translateY(45%);
+    }
+    100% {
+        transform: translateX(0);
+        -webkit-transform:  translateX(0);
+        -moz-transform:  translateX(0);
+        -ms-transform:  translateX(0);
+        -o-transform:  translateX(0);
+    }
+}
+@keyframes slideInFormLeft {
+    0% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
+@keyframes slideInFormRight {
+    0% {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
+
