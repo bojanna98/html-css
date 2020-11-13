@@ -9,7 +9,9 @@
     margin:0px 350px 0px 350px;
     
 }
-table,th,td{
+table,
+th,
+td {
     width:50px;
     height: 20px;
     table-layout: fixed;
@@ -23,7 +25,9 @@ table{
     border-radius:10px;
     margin:0px 100px 0px 100px
 }
-tr,th,td{
+tr,
+th,
+td {
     padding:15px
 }
 th{
@@ -55,4 +59,8 @@ td[rel="numbCircle"]{
 }
 th{
     font-weight: normal;
+}
+
+.td-color {
+    color: #DCDCDC;
 }
